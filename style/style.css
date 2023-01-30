@@ -166,7 +166,7 @@ body {
   text-shadow: 0px 3px 3px rgba(71, 39, 6, 0.5019607843);
 }
 .product-intro .intro-bg {
-  background: center no-repeat url(asset/Group\ 1516.png);
+  background: center no-repeat url(../asset/Group\ 1516.png);
   background-size: cover;
   z-index: -1;
   width: 100%;
