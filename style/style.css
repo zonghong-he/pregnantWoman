@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700&display=swap");
+body {
+  background: top/200% no-repeat url(/asset/網頁刊頭-無字.png), top 15% left no-repeat url(/asset/Group\ 1441.svg), bottom 15% right no-repeat url(/asset/Group\ 1442.svg), top left repeat url(/asset/Mask\ Group\ 20.png), bottom right repeat url(/asset/Group\ 1436.png);
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.logo {
+  margin-right: 2.25rem;
+}
+
+.activity-title {
+  margin-top: -3rem;
+}
+
+.text-gray {
+  color: #747474;
+}
+
+.text-brown {
+  color: #ad7b43;
+}
+
+.bg-apricot {
+  background-color: #edd2b3;
+}
+
+.text-label {
+  color: #2fafae;
+}
+
+.ememphasis-icon {
+  position: relative;
+}
+.ememphasis-icon::before {
+  content: "*";
+  color: #bf0505;
+  position: absolute;
+  left: -0.5rem;
+  top: -0.2rem;
+}
+
+.form-title {
+  color: #cc6d00;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.875rem;
+  position: relative;
+}
+.form-title::before, .form-title::after {
+  content: "";
+  display: block;
+  width: calc(50% - 5.25rem);
+  border: 1px solid #cc6d00;
+  position: absolute;
+  top: 50%;
+}
+.form-title::after {
+  right: 0;
+}
+
+.btn-emphasis {
+  padding: 0 2.5rem;
+  background-color: #f88a8a;
+  -webkit-box-shadow: 0px 3px 10px #772405;
+          box-shadow: 0px 3px 10px #772405;
+}
+.btn-emphasis:focus {
+  background-color: #f88a8a;
+}
+.btn-emphasis:hover {
+  background-color: rgb(243, 170, 170);
+}
+.btn-emphasis:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #c47070 !important;
+}
+
+.btn-label {
+  background-color: #2fafae;
+}
+.btn-label:focus {
+  background-color: #2fafae;
+}
+.btn-label:hover {
+  background-color: #2bcdcd;
+}
+.btn-label:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #1e8d8d !important;
+}
+
+.carousel .carousel-indicators {
+  position: relative;
+  margin-top: 1rem;
+}
+.carousel .indicator {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-right: 14px;
+}
+.carousel .indicator.active {
+  background-color: orange;
+}
+.carousel input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  background-color: gray;
+  -webkit-transition: 0.2s background-color linear;
+  transition: 0.2s background-color linear;
+  margin-right: 14px;
+}
+.carousel input[type=radio]:checked {
+  background-color: orange;
+}
+
+.activity {
+  margin: 4.6rem 0;
+}
+.activity .wrap {
+  min-height: 7.75rem;
+  padding: 2rem;
+}
+.activity .wrap label {
+  color: #2fafae;
+  margin-right: 2.5rem;
+  position: relative;
+  font-size: 1.25rem;
+}
+.activity .wrap label::after {
+  content: "";
+  display: block;
+  border: 1px solid #2fafae;
+  width: 2.5rem;
+  position: absolute;
+  right: -2.5rem;
+  top: 50%;
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+}
+.activity .wrap span, .activity .wrap li {
+  font-size: 1.125rem;
+}
+.activity .text-ememphasis {
+  color: #bf0505;
+}
+
+.product-intro {
+  margin-bottom: 7.5rem;
+}
+.product-intro .intro-title {
+  color: #2fafae;
+  margin-bottom: 4.3rem;
+}
+.product-intro ul {
+  color: white;
+  text-shadow: 0px 3px 3px rgba(71, 39, 6, 0.5019607843);
+}
+.product-intro .intro-bg {
+  background: center no-repeat url(/asset/Group\ 1516.png);
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+}
+
+.contact {
+  margin-bottom: 6.68rem;
+}
+.contact textarea {
+  resize: none;
+}
+.contact input, .contact textarea, .contact select, .contact p, .contact label {
+  border-color: #2fafae;
+  font-size: 1.125rem;
+}
+
+.main-footer {
+  background-color: #f8e8d5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 253px;
+}
+
+@media (width > 576px) {
+  body {
+    background-size: 160%, auto, auto, auto;
+  }
+  .img-ps {
+    padding-left: 8.3rem;
+  }
+}
+@media (width > 768px) {
+  body {
+    background-size: 120%, auto, auto, auto;
+  }
+  .bg {
+    margin-top: -2.5rem;
+  }
+}
+@media (width > 992px) {
+  .bg {
+    margin-top: -6rem;
+  }
+}
+@media (width > 1200px) {
+  body {
+    background-size: 100%, auto, auto, auto;
+  }
+  .container {
+    width: 1000px;
+  }
+}/*# sourceMappingURL=style.css.map */

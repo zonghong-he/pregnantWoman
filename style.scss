@@ -1,0 +1,226 @@
+$emphasis-color: #f88a8a;
+$emphasis-active-color: #c47070;
+$emphasis-hover-color: rgb(243, 170, 170);
+$shadow-color: #772405;
+$activity-title: #cc6d00;
+$text-ememphasis-color: #bf0505;
+$label-color: #2fafae;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700&display=swap');
+
+body {
+  background: top/200% no-repeat url(/asset/網頁刊頭-無字.png),
+    top 15% left no-repeat url(/asset/Group\ 1441.svg),
+    bottom 15% right no-repeat url(/asset/Group\ 1442.svg),
+    top left repeat url(/asset/Mask\ Group\ 20.png),
+    bottom right repeat url(/asset/Group\ 1436.png);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#img-group {
+  // max-width: 512px;
+  // max-height: 310px;
+  // overflow: hidden;
+}
+.logo {
+  margin-right: 2.25rem;
+}
+.activity-title {
+  margin-top: -3rem;
+}
+.text-gray {
+  color: #747474;
+}
+.text-brown {
+  color: #ad7b43;
+}
+.bg-apricot {
+  background-color: #edd2b3;
+}
+.text-label {
+  color: $label-color;
+}
+.ememphasis-icon {
+  position: relative;
+  &::before {
+    content: '*';
+    color: $text-ememphasis-color;
+    position: absolute;
+    left: -0.5rem;
+    top: -0.2rem;
+  }
+}
+.form-title {
+  color: $activity-title;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.875rem;
+  position: relative;
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    width: calc(50% - 1.75rem * 3);
+    border: 1px solid $activity-title;
+    position: absolute;
+    top: 50%;
+  }
+  &::after {
+    right: 0;
+  }
+}
+.btn-emphasis {
+  padding: 0 2.5rem;
+  background-color: $emphasis-color;
+  box-shadow: 0px 3px 10px $shadow-color;
+  &:focus {
+    background-color: $emphasis-color;
+  }
+  &:hover {
+    background-color: $emphasis-hover-color;
+  }
+  &:active {
+    box-shadow: none;
+    background-color: $emphasis-active-color !important;
+  }
+}
+.btn-label {
+  background-color: $label-color;
+  &:focus {
+    background-color: $label-color;
+  }
+  &:hover {
+    background-color: #2bcdcd;
+  }
+  &:active {
+    box-shadow: none;
+    background-color: #1e8d8d !important;
+  }
+}
+.carousel {
+  .carousel-indicators{
+    position: relative;
+    margin-top: 1rem;    
+  }  
+  .indicator{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: gray ;
+    margin-right: 14px;
+    &.active{
+      background-color: orange ;
+    }
+  }
+  input[type='radio'] {
+    appearance: none;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+
+    background-color: gray;
+    transition: 0.2s background-color linear;
+    margin-right: 14px;
+
+    &:checked {
+      background-color: orange ;
+    }
+  }
+}
+.activity {
+  margin: 4.6rem 0;
+  .wrap {
+    min-height: 7.75rem;
+    padding: 2rem;
+
+    label {
+      color: $label-color;
+      margin-right: 2.5rem;
+      position: relative;
+      font-size: 1.25rem;
+      &::after {
+        content: '';
+        display: block;
+        border: 1px solid $label-color;
+        width: 2.5rem;
+        position: absolute;
+        right: -2.5rem;
+        top: 50%;
+        transform: rotate(-70deg);
+      }
+    }
+    span,li{
+      font-size: 1.125rem;
+    }
+  }
+  .text-ememphasis {
+    color: $text-ememphasis-color;
+  }
+}
+.product-intro {
+  margin-bottom: 7.5rem;
+  .intro-title {
+    color: $label-color;
+    margin-bottom: 4.3rem;
+  }
+  ul {
+    color: white;
+    text-shadow: 0px 3px 3px #47270680;
+  }
+  .intro-bg {
+    background: center no-repeat url(/asset/Group\ 1516.png);
+    background-size: cover;
+    z-index: -1;
+    width: 100%;
+    // height: 261px;
+  }
+}
+.contact {
+  margin-bottom: 6.68rem;
+  textarea {
+    resize: none;
+  }
+  input,textarea,select,p,label{
+    border-color: $label-color;
+    font-size: 1.125rem;
+  }
+}
+.main-footer {
+  background-color: #f8e8d5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 253px;
+}
+
+@media (width > 576px) {
+  body {
+    background-size: 160%, auto, auto, auto;
+  }
+  .img-ps {
+    padding-left: 8.3rem;
+  }
+}
+@media (width > 768px) {
+  body {
+    background-size: 120%, auto, auto, auto;
+  }
+  .bg {
+    margin-top: -2.5rem;
+  }
+}
+@media (width > 992px) {
+  .bg {
+    margin-top: -6rem;
+    // position: absolute;
+    // bottom: -20%;
+  }
+}
+@media (width > 1200px) {
+  body {
+    background-size: 100%, auto, auto, auto;
+  }
+  .container {
+    width: 1000px;
+  }
+}
