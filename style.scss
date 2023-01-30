@@ -9,12 +9,12 @@ $label-color: #2fafae;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700&display=swap');
 
 body {
-  background: top/200% no-repeat url(/asset/網頁刊頭-無字.png),
-    top 15% left no-repeat url(/asset/Group\ 1441.svg),
-    bottom 15% right no-repeat url(/asset/Group\ 1442.svg),
-    top left repeat url(/asset/Mask\ Group\ 20.png),
-    bottom right repeat url(/asset/Group\ 1436.png);
-    font-family: 'Noto Sans TC', sans-serif;
+  background: top/200% no-repeat url(../asset/網頁刊頭-無字.png),
+    top 15% left no-repeat url(../asset/Group1441.svg),
+    bottom 15% right no-repeat url(../asset/Group1442.svg),
+    top left repeat url(../asset/MaskGroup20.png),
+    bottom right repeat url(../asset/Group1436.png);
+  font-family: 'Noto Sans TC', sans-serif;
 }
 #img-group {
   // max-width: 512px;
@@ -97,18 +97,18 @@ body {
   }
 }
 .carousel {
-  .carousel-indicators{
+  .carousel-indicators {
     position: relative;
-    margin-top: 1rem;    
-  }  
-  .indicator{
+    margin-top: 1rem;
+  }
+  .indicator {
     width: 9px;
     height: 9px;
     border-radius: 50%;
-    background-color: gray ;
+    background-color: gray;
     margin-right: 14px;
-    &.active{
-      background-color: orange ;
+    &.active {
+      background-color: orange;
     }
   }
   input[type='radio'] {
@@ -122,7 +122,7 @@ body {
     margin-right: 14px;
 
     &:checked {
-      background-color: orange ;
+      background-color: orange;
     }
   }
 }
@@ -148,7 +148,8 @@ body {
         transform: rotate(-70deg);
       }
     }
-    span,li{
+    span,
+    li {
       font-size: 1.125rem;
     }
   }
@@ -167,7 +168,7 @@ body {
     text-shadow: 0px 3px 3px #47270680;
   }
   .intro-bg {
-    background: center no-repeat url(/asset/Group\ 1516.png);
+    background: center no-repeat url(asset/Group\ 1516.png);
     background-size: cover;
     z-index: -1;
     width: 100%;
@@ -179,7 +180,11 @@ body {
   textarea {
     resize: none;
   }
-  input,textarea,select,p,label{
+  input,
+  textarea,
+  select,
+  p,
+  label {
     border-color: $label-color;
     font-size: 1.125rem;
   }
